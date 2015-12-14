@@ -1,0 +1,286 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/07/2015, 11:56:14 AM
+    Author     : Alejandro
+}*/
+
+@font-face
+{
+    font-family:myFuente;
+    src: url(../Fonts/segoeuil.ttf);
+    /*src:url(C:/Users/Alejandro/Documents/NetBeansProjects/CESPA/web/Fonts/segoeuil.ttf);*/
+}
+
+#mensage{
+    float: left;
+    margin: 15% auto 0 32%;
+    font-family: myFuente;
+    color: #59616a;
+    /*    font-weight: bolder;*/
+    background-color: #dbf5ed;
+    font-size: 20px;
+    padding-top: 7px;
+    text-align: center;
+    border: 1px solid #8de0c6;
+    border-radius: 4px;
+    width: 450px;
+    height: 40px;
+    /*box-shadow: 0px 0px 1px 0px rgba(148,148,148,1);*/
+}
+
+#mesLoad{
+    float: left;
+    margin: 4% auto 0 33%;
+    font-family: myFuente;
+    color: #59616a;
+    /*    font-weight: bolder;*/
+    background-color: #ffffce;
+    font-size: 20px;
+    padding-top: 7px;
+    text-align: center;
+    border: 1px solid #ffdf80;
+    border-radius: 4px;
+    width: 450px;
+    height: 40px;
+}
+
+#imgMensage{
+    max-width: 35px; 
+    max-height: 35px; 
+    float: left;
+    margin: -1px -16px 0 7px;
+}
+
+#Regresar{
+    float: right;
+    margin: -8px 0 0 0;
+    width: 70px;
+    height: 70px;
+    opacity: 0.3
+}
+
+#Regresar:hover{
+    opacity: 0.8
+}
+
+#Menu{
+    float: right;
+    margin: -8px 0 0 0;
+    width: 70px;
+    height: 70px;
+    opacity: 0.3
+}
+
+#Menu:hover{
+    opacity: 0.8
+}
+
+body{
+
+    background-color: #FAFAFA
+}
+
+.semanal{
+    font-family: myFuente;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #a8b6c0;
+    margin: 3px auto 0 auto;
+    background-color: #59616a;
+    width: auto; 
+    height: 22px;
+    padding-top: 0px;
+    opacity: 0.0;
+}
+
+.etapas{
+    font-family: myFuente;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #ff9554;
+    margin: 3px auto 0 auto;
+    background-color: #59616a;
+    width: auto; 
+    height: 22px;
+    padding-top: 0px;
+    opacity: 0.0;
+}
+
+.servicios{
+    font-family: myFuente;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #efc84a;
+    margin: 5px auto 0 auto;
+    background-color: #59616a;
+    width: auto; 
+    height: 22px;
+    padding-top: 0px;
+    opacity: 0.0;
+}
+
+.contable{
+    font-family: myFuente;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #5fd4af;
+    margin: 5px auto 0 auto;
+    background-color: #59616a;
+    width: auto; 
+    height: 22px;
+    padding-top: 0px;
+    opacity: 0.0;
+}
+
+img{
+    margin: 12% auto 0 2%; 
+}
+
+
+a{
+    text-align: center;
+    display: block;
+}
+
+
+#divConte{
+    border: 1px solid black;
+    height: 230px;
+
+}
+
+#boxUno {
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin: 10% auto 0 19%;    
+    /*border: 1px solid #909090;*/
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+
+}
+#boxUno:hover { 
+    width: 180px;
+    height: 180px;
+    margin: 9% auto 0 19%;    
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+}
+#boxUno:hover .semanal { 
+    opacity: 10;
+}
+
+#boxDos {
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin: 10% auto 0 3%;    
+    /*border: 1px solid #909090;*/
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+
+}
+#boxDos:hover { 
+    width: 180px;
+    height: 180px;
+    margin: 9% auto 0 3%;  
+    box-shadow: 0.5px 0.5px 8px 1px rgba(148,148,148,1);
+
+}
+#boxDos:hover .etapas { 
+    opacity: 10;
+}
+
+#boxTres {
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin: 10% auto 0 3%;    
+    /*border: 1px solid #909090;*/
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+
+}
+#boxTres:hover { 
+    width: 180px;
+    height: 180px;
+    margin: 9% auto 0 3%;  
+    box-shadow: 0.5px 0.5px 8px 1px rgba(148,148,148,1);
+
+}
+#boxTres:hover .servicios { 
+    opacity: 10;
+}
+
+#boxCuatro {
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin: 10% auto 0 3%;    
+    /*border: 1px solid #909090;*/
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+
+}
+#boxCuatro:hover { 
+    width: 180px;
+    height: 180px;
+    margin: 9% auto 0 3%;  
+    box-shadow: 0.5px 0.5px 8px 1px rgba(148,148,148,1);
+
+}
+#boxCuatro:hover .contable { 
+    opacity: 10;
+}
+
+#boxCinco {
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin: 10% auto 0 3%;    
+    /*border: 1px solid #909090;*/
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);
+}
+
+#boxCinco:hover { 
+    width: 180px;
+    height: 180px;
+    margin: 9% auto 0 3%;  
+    box-shadow: 0.5px 0.5px 8px 1px rgba(148,148,148,1);
+}
+
+#boxLoad {
+    width: 170px;
+    height: 170px;
+    margin: 10% auto 0 auto;    
+    /*border: 1px solid #909090;*/
+    /*border-radius: 3px;*/
+    /*background-color: white;*/
+    /*box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);*/
+}
+
+#menu{
+    float: right;
+    margin: -25px 2px 0 0;
+/*    width: 70px;
+    height: 70px;*/
+    opacity: 0.3
+}
+
+#menu:hover{
+    opacity: 0.8
+}
+

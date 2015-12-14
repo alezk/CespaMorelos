@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/07/2015, 09:28:54 AM
+    Author     : Alejandro
+*/
+
+td,th{
+    border:1px solid #CFC6E4;
+    border-collapse: collapse;
+    padding: 2px 
+}
+
+table{
+    font-family: myFuente;
+    font-size:14px;
+    text-align:center;
+    width:650px;
+    background:#FFF;
+    color:#674ea7;
+    border-collapse: collapse;
+    padding: 2px;
+    /*box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);*/
+    margin: 6% auto 1% auto
+}
+
+th{
+    font-size:15px;
+    background-color: #d9d2e9;
+    /*border:0px;*/
+    /*color: #900B56;*/
+    border-collapse: collapse;
+    padding: 2px;
+    font-weight:bold;
+}
+td{
+    color:#900B78;
+    /*font-weight:600;*/
+}
+
+#divTablaJson{
+    float: left;
+    /*margin: 5% auto 0 25%*/ 
+
+}
+
+#labelTable{
+    float: left;
+    margin: 2% auto 0.5% 25.6%;
+    width: 649px;
+    height: 30px;
+    border-bottom: 2px solid #d9d2e9;
+    text-align: center;
+    padding-top: 1px;
+    font-family: myFuente;
+    font-size: 23px;
+    text-shadow: 0px 0px 3px rgb(218,211,234);
+    /*font-weight: bold;*/
+    color:#674ea7;
+    /*background-color:#d2ff74;*/
+    /*box-shadow: 0.5px 0.5px 6px 0.5px rgba(148,148,148,1);*/
+}
+
+.caja {
+    /*margin : 20px auto 40px auto;*/
+    float: left;
+    margin: 0.5% auto 1% 25.6%;
+    border : 1px solid #674ea7;
+    height : 26px;
+    overflow : hidden;
+    width : 645px;
+    position : relative;
+}
+select {
+    font-family: myFuente;
+    color: #674ea7;
+    background : transparent;
+    border : none;
+    font-size : 14px;
+    height : 27px;
+    padding : 1.5px;
+    width : 640px;
+}
+select:focus {
+    outline : none;
+}
+.caja::after {
+    content : "\025be";
+    display : table-cell;
+    padding-top : 2px;
+    text-align : center;
+    width : 30px;
+    height : 30px;
+    background-color : #d9d2e9;
+    position : absolute;
+    top : 0;
+    right : 0px;
+    pointer-events : none;
+}
