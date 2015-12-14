@@ -252,7 +252,7 @@
             <li class="treeview">
               <a href="#"><i class="glyphicon glyphicon-list-alt text-purple"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="reportes.html">Ejemplo Reportes</a></li>
+                <li><a href="#">Ejemplo Reportes</a></li>
                 <li><a href="#">Link in level 2</a></li>
               </ul>
             </li>
