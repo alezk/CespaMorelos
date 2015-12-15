@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Logo mini cespa, pestañas del navegador -->
   <link rel="shortcut icon" href="<%=contex%>/Css/dist/img/logo/visionmorelos.png">
-  <title>Coordinación Estatal del Subsistema de Preparatoria Abierta</title>
+  <title>Coordinación Estatal del Subsistema de Preparatoria Abierta ---</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
