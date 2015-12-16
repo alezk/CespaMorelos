@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Logo mini cespa, pestañas del navegador -->
   <link rel="shortcut icon" href="<%=contex%>/Css/dist/img/logo/visionmorelos.png">
-  <title>Coordinación Estatal del Subsistema de Preparatoria Abierta ---</title>
+  <title>Coordinación Estatal del Subsistema de Preparatoria Abierta</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -240,14 +240,14 @@
             <li class="header">NAVEGACIÓN</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="treeview active">
-              <a href="#"><i class="glyphicon glyphicon-home text-red"></i> <span>Centros</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-unchecked text-red"></i> <span>Centros</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="<%=contex%>/Jsp/JspCentrosAsesoria.jsp">Ejemplo Reportes</a></li>
                 <li><a href="#">Link in level 2</a></li>
               </ul>
             </li>
             <li class="treeview">
-              <a href="#"><i class="glyphicon glyphicon-list-alt text-purple"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-unchecked text-purple"></i> <span>Reportes</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="reportes.html">Ejemplo Reportes</a></li>
                 <li><a href="#">Link in level 2</a></li>
