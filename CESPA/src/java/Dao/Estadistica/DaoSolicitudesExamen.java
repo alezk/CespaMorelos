@@ -27,7 +27,7 @@ public class DaoSolicitudesExamen {
       
             + "solicitud_examenes se "
 
-            + "where se.fecha_solicitud BETWEEN '2015-09-01%' and '2015-12-30%' and  not datepart(wk,se.fecha_solicitud) =32 and  not datepart(wk,se.fecha_solicitud) =47 and  not datepart(wk,se.fecha_solicitud) =40 "
+            + "where se.fecha_solicitud BETWEEN '2016-01-01%' and '2016-02-29%' and  not datepart(wk,se.fecha_solicitud) =2 and  not datepart(wk,se.fecha_solicitud) =47 and  not datepart(wk,se.fecha_solicitud) =40 "
             
             + "group by datepart(wk,se.fecha_solicitud) order by Semana;";
 
@@ -36,7 +36,7 @@ public class DaoSolicitudesExamen {
            
             + "n_solicitud_examenes se "
     
-            + "where se.fecha_solicitud BETWEEN '2015-09-01%' and '2015-12-30%'"
+            + "where se.fecha_solicitud BETWEEN '2016-01-01%' and '2016-02-29%'"
           
             + "group by datepart(wk,se.fecha_solicitud) order by Semana;";
     
@@ -60,13 +60,13 @@ public class DaoSolicitudesExamen {
             + "se.clave_calendario=ca.clave_calendario "
             + "group by ca.clave_etapa order by ca.clave_etapa;";
 */
-     public static String SqlSolicitudesEtapas33 ="select MONTH(fecha_solicitud), COUNT(*) from solicitud_examenes where fecha_solicitud BETWEEN '2015-01-01%' and '2015-12-31%' and YEAR(fecha_solicitud)=2015 GROUP BY MONTH(fecha_solicitud);";
-     public static String SqlSolicitudesEtapas22 ="select MONTH(fecha_solicitud), COUNT(*) from n_solicitud_examenes where fecha_solicitud BETWEEN '2015-01-01%' and '2015-12-31%' and YEAR(fecha_solicitud)=2015 GROUP BY MONTH(fecha_solicitud);";
+     public static String SqlSolicitudesEtapas33 ="select MONTH(fecha_solicitud), COUNT(*) from solicitud_examenes where fecha_solicitud BETWEEN '2016-01-01%' and '2016-02-29%' and YEAR(fecha_solicitud)=2016 GROUP BY MONTH(fecha_solicitud);";
+     public static String SqlSolicitudesEtapas22 ="select MONTH(fecha_solicitud), COUNT(*) from n_solicitud_examenes where fecha_solicitud BETWEEN '2016-01-01%' and '2016-02-29%'  and YEAR(fecha_solicitud)=2016 GROUP BY MONTH(fecha_solicitud);";
 
-    public static String SqlCredenciales = "select datepart(mm,fecha_sol), count(matricula) as Credencial from siosaddba.M_Credencial where fecha_sol BETWEEN '2015-01-01%' and '2015-12-30%' group by datepart(mm,fecha_sol);";
-    public static String SqlInscripciones = "select datepart(mm,fecha_alta), count(matricula) as Inscripciones from estudiantes where fecha_alta BETWEEN '2015-01-01%' and '2015-12-30%' group by datepart(mm,fecha_alta);";
-    public static String SqlConstancias = "select datepart(mm,fecha_sol), count(matricula) as Constancias from siosaddba.M_Constancia where fecha_sol BETWEEN '2015-01-01%' and '2015-12-30%' group by datepart(mm,fecha_sol);";
-    public static String SqlCertificados = "select datepart(mm,fecha_certificacion), count(matricula) as Certificados from Certificados_Expedidos where fecha_certificacion BETWEEN '2015-01-01%' and '2015-12-30%' and tipo_certificado='p' group by datepart(mm,fecha_certificacion);";
+    public static String SqlCredenciales = "select datepart(mm,fecha_sol), count(matricula) as Credencial from siosaddba.M_Credencial where fecha_sol BETWEEN '2016-01-01%' and '2016-02-29%'  group by datepart(mm,fecha_sol);";
+    public static String SqlInscripciones = "select datepart(mm,fecha_alta), count(matricula) as Inscripciones from estudiantes where fecha_alta BETWEEN '2016-01-01%' and '2016-02-29%' group by datepart(mm,fecha_alta);";
+    public static String SqlConstancias = "select datepart(mm,fecha_sol), count(matricula) as Constancias from siosaddba.M_Constancia where fecha_sol BETWEEN '2016-01-01%' and '2016-02-29%'  group by datepart(mm,fecha_sol);";
+    public static String SqlCertificados = "select datepart(mm,fecha_certificacion), count(matricula) as Certificados from Certificados_Expedidos where fecha_certificacion BETWEEN '2016-01-01%' and '2016-02-29%'  and tipo_certificado='p' group by datepart(mm,fecha_certificacion);";
 
     public List<BeanSolicitudExamenes> ConsultaSolicitudesSemanales33() {
         List<BeanSolicitudExamenes> listaClasificacion = new ArrayList();
