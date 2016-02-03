@@ -48,7 +48,7 @@ public class ServletArchivoJsonCentrosDeAsesorias extends HttpServlet {
             FileWriter fichero = new FileWriter(ruta);
             PrintWriter pw = new PrintWriter(fichero);
 
-            pw.write(respuestaJSON(g.CentrosDeAsesoria(request.getParameter("tipo"), 201501, 201512)));
+            pw.write(respuestaJSON(g.CentrosDeAsesoria(request.getParameter("tipo"), 201601, 201612)));
             pw.flush();
             fichero.flush();
             pw.close();
