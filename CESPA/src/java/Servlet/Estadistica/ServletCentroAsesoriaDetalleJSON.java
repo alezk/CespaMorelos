@@ -38,7 +38,7 @@ public class ServletCentroAsesoriaDetalleJSON extends HttpServlet {
             GestorCentrosDeAsesoriaDetalle g = new GestorCentrosDeAsesoriaDetalle();
             String mensajeJson;
             
-            mensajeJson = respuestaJSON(g.CentrosDeAsesoriaDetalle(request.getParameter("tipo"), 201501, 201512, Integer.parseInt(request.getParameter("centro"))));
+            mensajeJson = respuestaJSON(g.CentrosDeAsesoriaDetalle(request.getParameter("tipo"), 201601, 201612, Integer.parseInt(request.getParameter("centro"))));
             response.setContentType("application/json");
             response.getWriter().write(mensajeJson);
         }
