@@ -43,12 +43,14 @@ public class ServletAprovechemientoMaterias extends HttpServlet {
             out.println("<title>Servlet ServletAprovechemientoMaterias</title>");            
             out.println("</head>");
             out.println("<body>");
+            out.println("<table><tr> <td> T1</td> <td>T2 </td>  <td> T3 </td> <td> T4 </td> <td>T5 </td> <td> T6</td> </tr>");
             int x=1;
-            for(BeanMaterias b: gap.aprovechamientoMaterias(201511,"plan33")){
+            for(BeanMaterias b: gap.aprovechamientoMaterias(201601,"p22")){
                 
-                out.println("<label>"+x+" - "+b.getClaveMateria()+" / "+b.getMaterias()+"</label>"+" >< "+b.getPresentadas()+" >< "+b.getAcreditadas()+" <label> <strong>"+b.getPromedio()+"</strong></label><br>");
+                out.println("<tr><td>"+x+"</td><td>"+b.getClaveMateria()+" </td><td>"+b.getMaterias()+"</td>"+" <td> "+b.getPresentadas()+"</td> <td>"+b.getAcreditadas()+" </td><td>"+b.getPromedio()+"</td></tr>");
                 x++;
             }
+            out.println("</table>");
             out.println("<h1>Servlet ServletAprovechemientoMaterias at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
