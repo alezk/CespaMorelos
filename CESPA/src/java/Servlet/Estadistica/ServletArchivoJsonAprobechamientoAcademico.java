@@ -53,9 +53,9 @@ public class ServletArchivoJsonAprobechamientoAcademico extends HttpServlet {
             
             
               if (request.getParameter("tipo").equals("Ordinarios")) {
-                pw.write(respuestaJSON(g.AprobechamientoAcademicoOrd(201501, 201512)));
+                pw.write(respuestaJSON(g.AprobechamientoAcademicoOrd(201601, 201612)));
             } else {
-                pw.write(respuestaJSON(g.AprobechamientoAcademicoExt(201501, 201512)));
+                pw.write(respuestaJSON(g.AprobechamientoAcademicoExt(201601, 201612)));
             }            
             
             pw.flush();
