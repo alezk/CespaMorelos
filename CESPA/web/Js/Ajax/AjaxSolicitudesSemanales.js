@@ -10,9 +10,12 @@ $(function() {
         '15 Jun', '22 Jun', '29 Jun', '6 Jul', '13 Jul', '20 Jul', '27 Jul',
          '10 Ago', '17 Ago', '24 Ago', '31 Ago', '7 Sep', '14 Sep', '21 Sep', '28 Sep', '05 Oct','12 Oct','19 Oct','26 Oct','02 Nov','09 Nov','16 Nov','23 Nov','30 Nov'];
      
- */
+
 
      var categorias = [ '31 Ago', '7 Sep', '14 Sep', '21 Sep',  '05 Oct','12 Oct','19 Oct','26 Oct','02 Nov','09 Nov','23 Nov','30 Nov','07 Dic','14 Dic',];
+     
+ */
+     var categorias = [ '4 Enero','11 Enero','18 Enero','25 Enero','01 Febrero','08 Febrero','15 Febrero','22 Febrero','29 Febrero','7 Marzo'];
      //Se omite '03 Ago' por vacaciones
 
     $('#divTablaJson').hide();
